@@ -13,10 +13,10 @@ import com.blaller.blaseblallerservice.service.IdolService;
 
 @RestController
 public class IdolController {
-	
+
 	@Autowired
 	IdolService service;
-	
+
 	@RequestMapping(value = "/idols/all")
 	public ResponseEntity<List<String>> getAllIdols() {
 		Idols idols = service.getAllIdols();
